@@ -6,18 +6,4 @@ The experiments compare memory access patterns, loop interchange, padded and unp
 
 All experimental measurements and numerical verification outputs are stored in the `results/` directory.
 
-(.venv) alinaamangeldieva@MacBook-Pro-Alina CS482_Lab % python3 verify_outputs.py
-============================================================
-CS482 Parallel Computing: Automated Practicum Verifier
-============================================================
-[PASS] Milestone 0 (Host & Salt): Topology verified. Student ID: 230103224 | Salted N: 1472
-[PASS] Milestone 1 (Locality & Interchange): Stride cliff reproduced: Stride-8 is 1.00x slower per element than Stride-1
-[PASS] Milestone 1 (Locality & Interchange): Loop interchange speedup verified: 5.17x (Naive: 0.28s -> i-k-j: 0.05s)
-[PASS] Milestone 2 (False Sharing & Karp-Flatt): Telemetry loaded, raw columns verified.
-[PASS] Milestone 3 (Scaling & Roofline): Roofline analysis complete. AI: 0.10416666666666667 FLOPs/byte | Regime: memory-bound
-
-============================================================
-[COMPLETE] All milestones verified successfully!
-Generated submission receipt: results/verification_receipt.sig
-Token: 589fef86a14194dd...
-============================================================
+<img width="910" height="213" alt="Снимок экрана 2026-10-30 в 11 09 40" src="https://github.com/user-attachments/assets/98e4b952-51b0-40af-bfb3-db2fa8e3b4ed" />
