@@ -1,0 +1,28 @@
+{
+    "student_id": "230103224",
+    "cpu": {
+        "cpu_model": "Apple M3 Pro",
+        "architecture": "arm64",
+        "physical_cores": 11,
+        "logical_cores": 11,
+        "base_frequency_mhz": null,
+        "cache": {
+            "l1_data_bytes": 65536,
+            "l1_instruction_bytes": 131072,
+            "l2_bytes": 4194304,
+            "l3_bytes": null,
+            "cache_line_bytes": 128
+        }
+    },
+    "operating_system": {
+        "system": "Darwin",
+        "release": "25.3.0",
+        "version": "Darwin Kernel Version 25.3.0: Wed Jan 28 20:56:35 PST 2026; root:xnu-12377.91.3~2/RELEASE_ARM64_T6030",
+        "machine": "arm64"
+    },
+    "python": {
+        "implementation": "CPython",
+        "version": "3.14.4",
+        "full_version": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]"
+    }
+}
