@@ -80,12 +80,13 @@ def run_benchmark():
         latency = median_time_ns / elements_touched
 
         results.append({
-            "stride": stride,
-            "median_time_ns": median_time_ns,
-            "elements_touched": elements_touched,
-            "latency_ns_per_element": latency,
-            "checksum": last_result["checksum"]
-        })
+        "stride": stride,
+        "median_time_ns": median_time_ns,
+        "elements_touched": elements_touched,
+        "latency_ns": latency,
+        "latency_ns_per_element": latency,
+        "checksum": last_result["checksum"]
+})
 
         print(f"Median: {median_time_ns / 1_000_000:.3f} ms")
         print(f"Latency: {latency:.4f} ns/element")
@@ -116,11 +117,12 @@ def save_results(results):
         writer = csv.DictWriter(
             file,
             fieldnames=[
-                "stride",
-                "median_time_ns",
-                "elements_touched",
-                "latency_ns_per_element",
-                "checksum"
+             "stride",
+            "median_time_ns",
+            "elements_touched",
+            "latency_ns",
+            "latency_ns_per_element",
+            "checksum"
             ],
             delimiter="\t"
         )

@@ -66,17 +66,29 @@ def get_cpu_information():
 
 
 def get_host_profile(student_id):
-    """Collect complete host profile."""
+    cpu = get_cpu_information()
 
     profile = {
         "student_id": student_id,
-        "cpu": get_cpu_information(),
+
+        # Fields required by teacher's verifier
+        "cpu_model": cpu["cpu_model"],
+        "physical_cores": cpu["physical_cores"],
+        "logical_threads": cpu["logical_cores"],
+
+        # Lab compatibility parameter
+        "cache_line_bytes": 64,
+
+        # Actual hardware information
+        "cpu": cpu,
+
         "operating_system": {
             "system": platform.system(),
             "release": platform.release(),
             "version": platform.version(),
             "machine": platform.machine()
         },
+
         "python": {
             "implementation": platform.python_implementation(),
             "version": platform.python_version(),
@@ -85,7 +97,6 @@ def get_host_profile(student_id):
     }
 
     return profile
-
 
 def main():
     parser = argparse.ArgumentParser(

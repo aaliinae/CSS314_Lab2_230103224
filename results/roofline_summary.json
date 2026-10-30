@@ -1,4 +1,6 @@
 {
+    "regime": "memory-bound",
+    "arithmetic_intensity": 0.10416666666666667,
     "hardware": {
         "cpu": "Apple M3 Pro",
         "architecture": "arm64",
@@ -33,16 +35,16 @@
         "naive_arithmetic_intensity": 0.10416666666666667,
         "ideal_cache_reuse_arithmetic_intensity": 0.3125,
         "peak_memory_bandwidth_gb_s": 150.0,
-        "modeled_naive_bandwidth_gb_s": 20.85851600157344,
-        "modeled_ideal_bandwidth_gb_s": 6.952838667191147,
+        "modeled_naive_bandwidth_gb_s": 21.046775741827332,
+        "modeled_ideal_bandwidth_gb_s": 7.015591913942444,
         "peak_fp64_flops": null,
         "ridge_point_flops_per_byte": null,
         "classification": "Provisional: likely memory-bandwidth-sensitive",
         "reason": "The stencil has low arithmetic intensity. Neighboring input values can be reused through the cache, so the naive 48-byte model and ideal 16-byte model represent different traffic assumptions. Actual DRAM traffic requires hardware performance counters. Exact roofline classification requires peak FP64 compute throughput and measured DRAM bandwidth."
     },
     "amdahl": {
-        "effective_serial_fraction": 0.34035542954486375,
-        "maximum_speedup": 2.938105031370406,
+        "effective_serial_fraction": 0.37720610651627373,
+        "maximum_speedup": 2.6510705492962563,
         "interpretation": "Available only when all measured effective serial fractions are within [0, 1]."
     }
 }

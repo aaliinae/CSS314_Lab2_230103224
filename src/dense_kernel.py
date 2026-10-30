@@ -126,15 +126,21 @@ def main():
 
     # Results
     results = {
-        "student_id": "230103224",
-        "N": N,
-        "M": M,
-        "algorithm_ijk_median_seconds": time_ijk,
-        "algorithm_ikj_median_seconds": time_ikj,
-        "speedup": speedup,
-        "max_absolute_difference": max_difference,
-        "numerical_verification": bool(is_correct)
-    }
+    "student_id": "230103224",
+    "N": N,
+    "M": M,
+
+    # Fields required by teacher's verifier
+    "naive_time_s": time_ijk,
+    "interchanged_time_s": time_ikj,
+    "speedup": speedup,
+
+    # Original experiment data
+    "algorithm_ijk_median_seconds": time_ijk,
+    "algorithm_ikj_median_seconds": time_ikj,
+    "max_absolute_difference": max_difference,
+    "numerical_verification": bool(is_correct)
+}
 
     # Save JSON
     project_dir = os.path.dirname(

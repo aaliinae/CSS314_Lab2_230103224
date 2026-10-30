@@ -2,9 +2,11 @@
     "student_id": "230103224",
     "N": 1472,
     "M": 736,
-    "algorithm_ijk_median_seconds": 0.26890391599954455,
-    "algorithm_ikj_median_seconds": 0.05282008299946028,
-    "speedup": 5.090940807538909,
+    "naive_time_s": 0.2815647080005874,
+    "interchanged_time_s": 0.05443220800043491,
+    "speedup": 5.172759260442599,
+    "algorithm_ijk_median_seconds": 0.2815647080005874,
+    "algorithm_ikj_median_seconds": 0.05443220800043491,
     "max_absolute_difference": 0.0,
     "numerical_verification": true
 }

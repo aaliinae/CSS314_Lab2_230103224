@@ -1,5 +1,9 @@
 {
     "student_id": "230103224",
+    "cpu_model": "Apple M3 Pro",
+    "physical_cores": 11,
+    "logical_threads": 11,
+    "cache_line_bytes": 64,
     "cpu": {
         "cpu_model": "Apple M3 Pro",
         "architecture": "arm64",

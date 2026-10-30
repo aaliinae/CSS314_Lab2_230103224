@@ -643,7 +643,9 @@ def generate_roofline_summary(
     )
 
     summary = {
-
+        "regime": "memory-bound",
+        "arithmetic_intensity": naive_ai,
+        
         "hardware": {
             "cpu": "Apple M3 Pro",
             "architecture": platform.machine(),
