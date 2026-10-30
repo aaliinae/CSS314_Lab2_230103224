@@ -1,0 +1,10 @@
+{
+    "student_id": "230103224",
+    "N": 1472,
+    "M": 736,
+    "algorithm_ijk_median_seconds": 0.26890391599954455,
+    "algorithm_ikj_median_seconds": 0.05282008299946028,
+    "speedup": 5.090940807538909,
+    "max_absolute_difference": 0.0,
+    "numerical_verification": true
+}
